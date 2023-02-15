@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Лига Банка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/svg/logo.svg" alt="logo"></a>
+        <input type="checkbox" name="burger" id="burger-check" class="hidden" />
+
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#calculate">Рассчитать кредит</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Задать вопрос</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="header_top">
+            <svg class="header_sign_icon" width="20" height="22" viewBox="0 0 20 22" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+              <path d="M2.222 14.3h2.222v5.5h13.334V2.2H4.444v5.5H2.222V1.1c0-.292.117-.572.326-.778.208-.206.49-.322.785-.322H18.89c.295 0 .577.116.786.322.208.206.325.486.325.778v19.8c0 .292-.117.572-.325.778a1.117 1.117 0 01-.786.322H3.333c-.294 0-.577-.116-.785-.322a1.095 1.095 0 01-.326-.778v-6.6zM8.89 9.9V6.6l5.555 4.4-5.555 4.4v-3.3H0V9.9h8.889z" /></svg>
+              <span class="enter-text">Войти в Интернет-банк</span></a>
+              <label for="burger-check" class="hidden burger-check">
+                <img src="img/svg/menu.svg" />
+            </label>
+            <div class="enter hidden">
+                <div class="enter__header">
+                  <img src="img/svg/logo.svg" alt="logo">
+                  <button class="close" type="button">
+                      <img src="img/svg/close.svg" alt="close">
+                  </button>
+              </div>
+
+              <div class="enter__form">
+                  <form class="enter__form">
+                    <label class="enter-label" for="login">Логин</label>
+                    <input type="text" name="login" id="login" class="enter-input">
+                    <label class="enter-password" for="password">Пароль</label>
+                    <input type="text" name="password" id="password" />
+                    <div class="grey"><a href="#">Зарегистрироваться</a></div>
+                    <button type="submit">Войти</button>
+                    <div class="grey"><a href="#">Забыли пароль? Восстановить</a></div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Блок слайдер -->
+        <section id="slider" class="slider">
+            <h2 class="hidden">Слайдер</h2>
+            <div class="controls">
+                <label for="one"></label>
+                <label for="two"></label>
+                <label for="three"></label>
+            </div>
+
+            <input type="radio" name="point" id="one" checked class="radio">
+            <input type="radio" name="point" id="two" class="radio">
+            <input type="radio" name="point" id="three" class="radio">
+
+            <div class="slide one">
+                <h3>Лига Банк</h3>
+                <p>Всегда рядом</p>
+                <a href="#office" class="btn">Найти отделение</a>
+            </div>
+
+            <div class="slide two">
+                <h3>Лига Банк</h3>
+                <p>Ваша уверенность в завтрашнем дне</p>
+            </div>
+
+            <div class="slide three">
+                <h3>Лига Банк</h3>
+                <p>Кредиты на любой случай</p>
+                <a href="#calculate" class="btn">Рассчитать кредит</a>
+            </div>
+        </section>
+
+        <!-- Блок Услуги-->
+        <div class="wrapper">
+            <section id="services" class="services">
+                <h2 class="hidden">Наши услуги</h2>
+                <ul class="services_tab">
+                    <li><a href="#">
+                        <img src="img/svg/icon-blue-vault.svg" alt="vault">
+                    </a>
+                    <span>Вклады</span>
+                </li>
+
+                <li><a href="#">
+                    <img src="img/svg/icon-blue-cards.svg" alt="cards">
+                </a>
+                <span>Кредиты</span>
+                        </li>
+
+                        <li><a href="#">
+                            <img src="img/svg/icon-blue-security.svg" alt="security">
+                        </a>
+                        <span>Страхование</span>
+                    </li>
+
+                    <li><a href="#">
+                        <img src="img/svg/icon-blue-phone.svg" alt="phone">
+                    </a>
+                    <span>Онлайн-сервисы</span>
+                </li>
+            </ul>
+            <div class="services-description">
+                <div class="services-description__left">
+                    <h4>Вклады Лига Банка - это выгодная инвестиция в свое будущее</h4>
+                    <ul>
+                        <li>Проценты по вкладам до 7%</li>
+                        <li>Разнообразные условия</li>
+                        <li>Возможность ежемесячной капитализации <span class="space">или вывод процентов на банковскую карту</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Узнать подробнее</a>
+                </div>
+                <div class="services-description__right">
+                    <img src="img/content/tab-piggybank-desctop@1x.jpg" alt="piggy">
+
+                </div>
+            </div>
+            </section>
+
+            <!-- Блок Кредитный калькулятор-->
+            <section id="calculate" class="calculate">
+                <h2>Кредитный калькулятор</h2>
+                <form action="#" method="post" class="form">
+                    <div class="form-left">
+                        <h3>Шаг 1. Цель кредита</h3>
+                        <label for="purpose-field" class="hidden">Цель кредита</label>
+                        <select name="purpose" id="purpose-field" required>
+                            <option value="mortgage">Ипотечное кредитование</option>
+                            <option value="auto">Автомобильное кредитование</option>
+                            <option value="consumer">Потребительский кредит</option>
+                        </select>
+
+                        <h3>Шаг 2. Введите параметры кредита</h3>
+
+                        <label for="price-field">Стоимость недвижимости</label>
+                        <div class="before">
+                            <input type="text" name="price" id="price-field" value="2 000 000 рублей">
+                        </div>
+                        <span class="grey">От 1 200 000 до 25 000 000 рублей</span>
+
+
+                        <label for="contribution-field">Первоначальный взнос</label>
+                        <input type="text" name="contribution" id="contribution-field" value="200 000 рублей">
+
+                        <label for="percent-field" class="hidden">Процент</label>
+                        <input type="range" name="contribution-percent" id="percent-field" value="0">
+                        <span class="grey">10%</span>
+
+
+                        <label for="period-field">Срок кредитования</label>
+                        <input type="text" name="period" id="period-field" value="5 лет">
+
+                        <label for="term-field" class="hidden">Срок</label>
+                        <input type="range" name="term" id="term-field" min="5" max="30" step="1" value="0">
+                        <div class="row">
+                            <span class="grey">5 лет</span>
+                            <span class="grey">30 лет</span>
+                        </div>
+
+                        <div class="check">
+                            <input type="checkbox" name="capital" id="capital-field">
+                            <label for="capital-field">Использовать материнский капитал</label>
+                        </div>
+                    </div>
+
+                    <div class="form-right">
+                        <h3>Наше предложение</h3>
+
+                        <div class="sentence-item">
+                            <h4>1 330 000 рублей</h4>
+                            <span>Сумма ипотеки</span>
+                        </div>
+
+                        <div class="sentence-item">
+                            <h4>9,40%</h4>
+                            <span>Процентная ставка</span>
+                        </div>
+
+                        <div class="sentence-item">
+                            <h4>27 868 рублей</h4>
+                            <span>Ежемесячный платеж</span>
+                        </div>
+
+                        <div class="sentence-item">
+                            <h4>61 929 рублей</h4>
+                            <span>Необходимый доход</span>
+                        </div>
+                        <input type="submit" name="submit" value="Оформить заявку" class="btn">
+
+                    </div>
+
+                </form>
+            </section>
+
+            <!--Блок Отделения Лига Банка -->
+            <section id="office" class="office">
+                <h2>Отделения Лига Банка</h2>
+                <div class="map-control">
+                    <input type="checkbox" name="Russia" id="Russia-check" checked>
+                    <label for="Russia-check">Россия</label>
+
+                    <input type="checkbox" name="SNG" id="SNG-check" checked>
+                    <label for="SNG-check">СНГ</label>
+
+                    <input type="checkbox" name="Europa" id="Europa-check">
+                    <label for="Europa-check">Европа</label>
+                </div>
+                <img src="img/bg-map@1x.jpg" alt="map">
+            </section>
+            </div>
+</main>
+<footer class="page-footer">
+    <div class="wrapper">
+        <div class="footer-left">
+            <img src="img/svg/logo.svg" alt="logo">
+            <p class="grey">150015. г.Москва, ул. Московская, д. 32</p>
+            <p class="grey">Генеральная лицензия Банка России №1050</p>
+            <p class="grey">&copy Лига Банк, 2022</p>
+        </div>
+
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#calculate">Рассчитать кредит</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Задать вопрос</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="short-phone">
+            <a href="tel:0904">*0904</a>
+            <p class="grey">Бесплатно для абонентов МТС, Билайн, Мегафон, Теле2</p>
+        </div>
+
+        <div class="phone">
+            <a href="tel:88001112233">8 800 111 22 33</a>
+            <p class="grey">Бесплатно для всех городов России</p>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <svg width="9" height="16" viewBox="0 0 9 16" preserveAspectRatio="none" fill="#000000"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9.2h2.143L9 6H6V4.4c0-.824 0-1.6 1.714-1.6H9V.112A25.85 25.85 0 006.551 0c-2.327 0-3.98 1.326-3.98 3.76V6H0v3.2h2.571V16H6V9.2z"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="none" fill="#000000"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0c2.174 0 2.445.008 3.298.048.852.04 1.432.174 1.942.372a3.9 3.9 0 011.418.922c.406.4.721.884.922 1.418.198.51.332 1.09.372 1.942C15.99 5.555 16 5.826 16 8s-.008 2.445-.048 3.298c-.04.852-.174 1.432-.372 1.942a3.907 3.907 0 01-.922 1.418 3.94 3.94 0 01-1.418.922c-.51.198-1.09.332-1.942.372C10.445 15.99 10.174 16 8 16s-2.445-.008-3.298-.048c-.852-.04-1.432-.174-1.942-.372a3.911 3.911 0 01-1.418-.922A3.923 3.923 0 01.42 13.24c-.198-.51-.332-1.09-.372-1.942C.01 10.445 0 10.174 0 8s.008-2.445.048-3.298C.088 3.85.222 3.27.42 2.76c.2-.534.515-1.018.922-1.418.4-.407.884-.721 1.418-.922C3.27.222 3.85.088 4.702.048 5.555.01 5.826 0 8 0zm0 4a4 4 0 100 8 4 4 0 000-8zm5.2-.2a1 1 0 10-2 0 1 1 0 002 0zM8 5.6a2.4 2.4 0 110 4.8 2.4 2.4 0 010-4.8z"/>
+        </svg>
+    </a>
+    <a href="#">
+        <svg width="16" height="13" viewBox="0 0 16 13" preserveAspectRatio="none" fill="#000000"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 1.543c-.6.265-1.236.44-1.886.516A3.292 3.292 0 0015.558.244a6.564 6.564 0 01-2.085.796A3.283 3.283 0 007.88 4.032 9.325 9.325 0 011.114.604a3.28 3.28 0 001.016 4.38 3.273 3.273 0 01-1.487-.41v.04a3.281 3.281 0 002.633 3.218c-.484.13-.99.15-1.483.056a3.283 3.283 0 003.066 2.279A6.59 6.59 0 010 11.525 9.29 9.29 0 005.031 13c6.039 0 9.341-4.999 9.341-9.334 0-.141-.004-.284-.01-.424A6.667 6.667 0 0016 1.544z"/>
+    </svg>
+</a>
+<a href="#">
+    <svg width="16" height="13" viewBox="0 0 16 13" preserveAspectRatio="none" fill="#000000"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.634 2.03C16 3.478 16 6.5 16 6.5s0 3.023-.366 4.47c-.203.8-.797 1.43-1.55 1.643C12.717 13 8 13 8 13s-4.714 0-6.084-.387c-.756-.216-1.35-.845-1.55-1.643C0 9.523 0 6.5 0 6.5s0-3.022.366-4.47c.203-.8.797-1.43 1.55-1.643C3.286 0 8 0 8 0s4.717 0 6.084.387c.756.216 1.35.845 1.55 1.643zM6.4 9.344L11.2 6.5 6.4 3.656v5.688z"/>
+</svg>
+</a>
+</div>
+</div>
+</footer>
+<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
